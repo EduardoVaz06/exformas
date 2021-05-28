@@ -1,11 +1,12 @@
+#include <math.h>
 #include <iostream>
 using namespace std;
 
-#ifndef Forma_hpp
-#define Forma_hpp
+#ifndef Formas_hpp
+#define Formas_hpp
 
 
-class Forma{
+class Formas{
 public:
     virtual void calculaArea() = 0;
 
@@ -19,3 +20,4 @@ protected:
 };
 
 #endif
+
