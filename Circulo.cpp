@@ -1,11 +1,18 @@
 #include "Circulo.hpp"
 
-void Circulo::setRaio(float raio)
+Circulo::Circulo(string n, float r)
 {
-    this->raio = raio;
+    nome = n;
+    raio = r;
 }
 
-void Circulo::calculaArea(Circulo circulo)
+void Circulo::setRaio(float r)
 {
-    float area
+    raio = r;
+}
+
+void Circulo::calculaArea()
+{
+    area = (3.14*(raio*raio));
+    cout << "Area do circulo " << nome << " = " << area << endl;
 }
